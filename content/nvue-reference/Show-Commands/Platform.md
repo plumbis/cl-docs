@@ -282,7 +282,7 @@ cumulus@switch:~$ nv show platform software
 
 ## <h>nv show platform software installed</h>
 
-Shows a list of the installed software on the switch.
+Shows a list of the installed software packages on the switch.
 
 ### Version History
 
