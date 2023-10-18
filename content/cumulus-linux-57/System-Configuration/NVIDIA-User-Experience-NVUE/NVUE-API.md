@@ -282,6 +282,9 @@ The following example configures the listening address on eth0, which has IP add
 cumulus@switch:~$ curl -u 'cumulus:cumulus' -k --request PATCH https://localhost:8765/nvue_v1/system/api/listening-address?rev=2 -H 'Content-Type:application/json' -d '{"172.0.24.0": {}}'
 ```
 
+{{< /tab >}}
+{{< /tabs >}}
+
 ### Show NVUE REST API Information
 
 To show REST API port configuration, state (enabled or disabled), certificate, listening address, and connection information:
