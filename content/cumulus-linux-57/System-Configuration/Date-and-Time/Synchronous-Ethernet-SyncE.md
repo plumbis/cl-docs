@@ -19,7 +19,8 @@ The Cumulus Linux switch includes a SyncE controller and a SyncE daemon.
   - Manages the synchronization hierarchy and runs the master selection algorithm to choose the best reference clock from the <span class="a-tooltip">[QL](## "Quality Level")</span> in the SSM.
 
 {{%notice note%}}
-Cumulus Linux supports SyncE for the NVIDIA SN3750-SX switch only.
+- Cumulus Linux supports SyncE for the NVIDIA SN3750-SX switch only.
+- SyncE with PTP is currently in Beta
 {{%/notice%}}
 
 ## Basic Configuration
