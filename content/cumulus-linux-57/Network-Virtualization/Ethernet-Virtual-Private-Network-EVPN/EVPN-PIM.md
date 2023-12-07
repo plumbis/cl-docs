@@ -4,6 +4,7 @@ author: NVIDIA
 weight: 580
 toc: 4
 ---
+<!--
 {{%notice info%}}
 Cumulus Linux 5.6 only supports Head-End Replication (HREP) for handling BUM traffic in an EVPN configuration. BUM handling using a PIM-SM Multicast tree is not supported.
 {{%/notice%}}
