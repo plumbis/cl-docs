@@ -94,7 +94,7 @@ cumulus@switch:~$ sudo lldpcli configure system interface pattern ""
 
 {{< /expand >}}
 
-## Enable the SNMP Subagent
+## SNMP Subagent
 
 LLDP does not enable the <span class="a-tooltip">[SNMP](## "Simple Network Management Protocol")</span> subagent by default. To enable the SNMP subagent, edit the `/etc/default/lldpd` file and add the `-x` option:
 
