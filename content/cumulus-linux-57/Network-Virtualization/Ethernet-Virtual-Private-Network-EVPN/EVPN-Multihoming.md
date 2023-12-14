@@ -25,7 +25,7 @@ To configure EVPN-MH, you set an Ethernet segment system MAC address and a local
 While you can specify a different system MAC address on different Ethernet segments attached to the same switch, the Ethernet segment system MAC address must be the same on the downlinks attached to the same server.
 
 {{%notice info%}}
-On Spectrum-2 and Spectrum-3 switches, an Ethernet segment can span more than two switches. Each Ethernet segment is a distinct redundancy group. However, on Spectrum A1 switches, you can include a maximum of two switches in a redundancy group or Ethernet segment.
+On Spectrum-2 and later, an Ethernet segment can span more than two switches. Each Ethernet segment is a distinct redundancy group. However, on Spectrum A1 switches, you can include a maximum of two switches in a redundancy group or Ethernet segment.
 {{%/notice%}}
 
 ## Required and Supported Features
