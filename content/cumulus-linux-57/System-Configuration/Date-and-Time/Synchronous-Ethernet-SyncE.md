@@ -3,7 +3,6 @@ title: Synchronous Ethernet - SyncE
 author: NVIDIA
 weight: 128
 toc: 3
-draft: true
 
 ---
 {{%notice note%}}
