@@ -10,6 +10,17 @@ NVUE supports both traditional snippets and flexible snippets:
 
 Cumulus Linux stores all snippets in the `/system/config/snippet` directory.
 
+{{%notice note%}}
+- A snippet configures a single parameter associated with a specific configuration file.
+- You can only set or unset a snippet; you cannot modify, partially update, or change a snippet.
+- Setting the snippet value replaces any existing snippet value.
+- Cumulus Linux supports only one snippet for a configuration file.
+- Only certain configuration files support a snippet.
+- NVUE does not parse or validate the snippet content and does not validate the resulting file after you apply the snippet.
+- PATCH is only the method of applying snippets and does not refer to any snippet capabilities.
+- As NVUE supports more features and introduces new syntax, snippets and flexible snippets become invalid. **Before** you upgrade Cumulus Linux to a new release, review the {{<link url="Whats-New" text="What's New">}} for new NVUE syntax and remove the snippet if NVUE introduces new syntax for the feature that the snippet configures.
+{{%/notice%}}
+
 ## Traditional Snippets
 
 Use traditional snippets if you configure Cumulus Linux with NVUE commands, then want to configure a feature that does not yet support the NVUE Object Model. You create a snippet in `yaml` format, then add the configuration to the file with the `nv config patch` command.
