@@ -52,7 +52,7 @@ overwrite: all
 
 ## <h>nv show system config apply ignore</h>
 
-Shows which files are ignored when you run the `nv config apply` command.
+Shows which files NVUE ignores when you run the `nv config apply` command.
 
 ### Version History
 
