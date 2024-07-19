@@ -299,7 +299,7 @@ def get_products():
     netq_exclude_list = ["4.1.0", "4.2.0", "4.3.0", "4.4.0", "4.5.0", "4.6.0", "4.7.0", "4.8.0", "4.9.0", "4.10.0"]
 
     session = requests.Session()
-    url = "https://d2whzysjlaya8k.cloudfront.net/release_notes_and_license_list.json"
+    url = "https://d2whzysjlaya8k.cloudfront.net/release_notes_and_license_list_stage.json"
     response = session.get(url)
     if response.status_code != 200:
         print("Unable to download JSON releases file to determine products and versions for FOSS licenses.")
