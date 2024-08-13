@@ -825,7 +825,7 @@ Only modify this command setting if you are an advanced user.
 | Syntax |  Description   |
 | ---------  | -------------- |
 | `<profile-id>` |   The profile name. |
-| `<priority-group-id>` |  The priority group alias name. |
+| `<priority-group-id>` |  The priority group alias name. In Cumulus Linux 5.10 and later, you can specify `bulk` and `service1` through `service7`. In Cumulus Linux 5.9 and earlier, you can specify `bulk`, `control`, and `service1` through `service6`.|
 
 ### Version History
 
@@ -852,7 +852,7 @@ Only modify this command setting if you are an advanced user.
 | Syntax |  Description   |
 | ---------  | -------------- |
 | `<profile-id>` |   The profile name. |
-| `<priority-group-id>` |  The priority group alias name. |
+| `<priority-group-id>` |  The priority group alias name.  In Cumulus Linux 5.10 and later, you can specify `bulk`, and `service1` through `service7`. In Cumulus Linux 5.9 and earlier, you can specify `bulk`, `control`, and `service1` through `service6`. |
 
 ### Version History
 
@@ -879,7 +879,7 @@ Only modify this command setting if you are an advanced user.
 | Syntax |  Description   |
 | ---------  | -------------- |
 | `<profile-id>` |   The profile name. |
-| `<priority-group-id>` |  The priority group alias name. |
+| `<priority-group-id>` |  The priority group alias name.  In Cumulus Linux 5.10 and later, you can specify `bulk`, and `service1` through `service7`. In Cumulus Linux 5.9 and earlier, you can specify `bulk`, `control`, and `service1` through `service6`.|
 
 ### Version History
 
@@ -906,7 +906,7 @@ Only modify this command setting if you are an advanced user.
 | Syntax |  Description   |
 | ---------  | -------------- |
 | `<profile-id>` |   The profile name. |
-| `<priority-group-id>` |  The priority group alias name. |
+| `<priority-group-id>` |  The priority group alias name.  In Cumulus Linux 5.10 and later, you can specify `bulk`, and `service1` through `service7`. In Cumulus Linux 5.9 and earlier, you can specify `bulk`, `control`, and `service1` through `service6`.|
 
 ### Version History
 
@@ -933,7 +933,7 @@ Only modify this command setting if you are an advanced user.
 | Syntax |  Description   |
 | ---------  | -------------- |
 | `<profile-id>` |   The profile name. |
-| `<priority-group-id>` |  The priority group alias name. |
+| `<priority-group-id>` |  The priority group alias name.  In Cumulus Linux 5.10 and later, you can specify `bulk`, and `service1` through `service7`. In Cumulus Linux 5.9 and earlier, you can specify `bulk`, `control`, and `service1` through `service6`. |
 
 ### Version History
 
@@ -960,7 +960,7 @@ Only modify this command setting if you are an advanced user.
 | Syntax |  Description   |
 | ---------  | -------------- |
 | `<profile-id>` |   The profile name. |
-| `<priority-group-id>` |  The priority group alias name. |
+| `<priority-group-id>` |  The priority group alias name. In Cumulus Linux 5.10 and later, you can specify `bulk`, and `service1` through `service7`. In Cumulus Linux 5.9 and earlier, you can specify `bulk`, `control`, and `service1` through `service6`.|
 | `<qos-sp-id>` |  The switch priority. |
 
 ### Version History
@@ -1147,7 +1147,7 @@ The switch calculates the default value internally based on the MTU and internal
 
 | Syntax |  Description   |
 | ---------  | -------------- |
-| `<priority-group-id>` |  The priority group alias name. |
+| `<priority-group-id>` |  The priority group alias name. In Cumulus Linux 5.10 and later, you can specify `bulk`, and `service1` through `service7`. In Cumulus Linux 5.9 and earlier, you can specify `bulk`, `control`, and `service1` through `service6`.|
 
 ### Version History
 
