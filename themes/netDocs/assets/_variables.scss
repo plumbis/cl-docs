@@ -1,0 +1,105 @@
+// Import DIN PRO webfont
+@font-face{font-family:"DINPro";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro.woff") format("woff");font-style:normal;font-weight:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+@font-face{font-family:"DINPro";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Bold.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Bold.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Bold.woff") format("woff");font-style:normal;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+@font-face{font-family:"DINPro";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Light.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Light.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Light.woff") format("woff");font-style:normal;font-weight:lighter;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+@font-face{font-family:"DINPro-Regular";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Regular.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Regular.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Regular.woff") format("woff"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Regular.ttf") format("truetype");-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+@font-face{font-family:"DINPro-Light";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.woff") format("woff"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.ttf") format("truetype");-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+@font-face{font-family:"DINWebPro-Medium";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Medium.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Medium.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Medium.woff") format("woff");-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+
+$padding-1: 1px;
+$padding-4: 0.25rem;
+$padding-8: 0.5rem;
+$padding-16: 1rem;
+
+$cumulus-font-family: "DINPro-Regular", "Helvetica", sans-serif;
+$font-size-base: 17px;
+$font-size-12: 0.70rem;
+$font-size-14: 0.823rem;
+$font-size-16: 0.941;
+$border-radius: $padding-4 !default;
+
+// Grayscale
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Primary color palette
+$nvidia-green: #76b900;
+$jade: #00ad69;
+$white: #ffffff;
+$black: #000;
+
+//Secondary color palette
+$mantis: #7ccc6c;
+$fern: #4bc05b;
+$observatory: #009271;
+$tropical-rain-forest: #006c56;
+$te-papa-green: #1e5a4d;
+
+// Tertiary color palette
+$energy-yellow: #ffc82e;
+$neon-carrot: #ffa12d;
+$radical-pink: #f1446f;
+$error-red: $radical-pink;
+$rarity-violet: #83389b;
+$seagull-blue: #1eb5bd;
+$dark-olive: #364249;
+$wizard-blue: #78cdd1;
+
+// Cool grays
+$spruce-gray: #36424a;
+$rolling-stone: #75828c;
+$nevada-gray: #5f6a72;
+$cadet-gray: #6a6e75;
+$athens-gray: #eaedf2;
+$aqua-haze: #f6f8fa;
+$heather-gray: #cbd4e0;
+$gray-chateau: #8c9aa6;
+$mystic: #e0e4ec;
+
+
+$color-link: $nvidia-green;
+$color-visited-link: $spruce-gray;
+$color-dark-link: $spruce-gray;
+
+$body-background: $white;
+$body-font-color: $spruce-gray;
+$body-font-weight: 300;
+$body-min-width: 5rem;
+
+$code-block-background: $athens-gray;
+
+$nav-background: $aqua-haze;
+$nav-link-color: $spruce-gray;
+
+$header-height: 3.5rem;
+$menu-width: 18.53rem;
+$toc-width: 14.647rem;
+
+$container-min-width: $body-min-width;
+$container-max-width: 130rem;
+
+$sm-breakpoint: $menu-width + $body-min-width + 5;
+$md-breakpoint: $sm-breakpoint + $toc-width;
+
+$body-max-width: $container-max-width - $menu-width - $toc-width;
+
+$xs-down: 'only screen and (max-width: 575px)';
+
+$sm-up: 'only screen and (min-width: 576px)';
+$md-up: 'only screen and (min-width: 768px)';
+$lg-up: 'only screen and (min-width: 992px)';
+$xl-up: 'only screen and (min-width: 1200px)';
+$xxl-up: 'only screen and (min-width: 1600px)';

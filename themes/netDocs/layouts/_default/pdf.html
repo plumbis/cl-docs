@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div id="cover">
+    <div id="centered">
+        {{ if eq .Params.type "pdf" }}
+            {{ if eq .Section "cumulus-netq" }}
+                <h1>NVIDIA NetQ v{{.Page.Params.version}} User Documentation</h1>
+            {{ end }}
+            {{ if eq .Section "cumulus-linux" }}
+                <h1>Cumulus Linux v{{.Page.Params.version}} User Documentation</h1>
+            {{ end }}
+            <img src={{"images/nvidia-logo.svg" | absURL }} alt="NVIDIA Cumulus Linux" />
+            <br />
+        {{ end }}
+    </div>
+</div>
+
+{{ if eq .Params.type "pdf" }}
+    {{ range (where $.Site.Pages "Type" .Section) }}
+        {{ if not .Params.pdfhidden }}
+                <article class="markdown">
+                    <span class="toc{{ .Params.toc }}"><h1><a id="{{- urlize .Title -}}"></a>{{- .Title -}}</h1></span>
+                    {{- .Content -}}
+                </article>
+                {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}

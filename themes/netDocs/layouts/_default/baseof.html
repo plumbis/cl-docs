@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+  {{ partial "head" . }}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tablesaw/3.1.2/tablesaw.min.css" integrity="sha512-FW7xwIsGt3iCswNR3o4kcXqkKDvN8Q7obwdxFODRT+L6XkRtScLElfvobA7bjiC2iTgG/sRaBUqdrhqx0RTauw==" crossorigin="anonymous" />
+  {{ partial "google-analytics" . }}
+</head>
+
+
+<body class="docs">
+<!-- PDF output does not require standard menus -->
+{{if ne .Page.Type "pdf"}}
+  <!-- Green bar header -->
+  {{ partial "top-header" . }}
+<div class="docs-wrapper">
+  {{ partial "version-dropdown" . }}
+
+  {{ partial "mobile-dropdown" . }}
+
+  <main class="container flex">
+    <aside class="book-menu">
+
+      <nav role="navigation">
+        <h2 class="book-brand"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
+        <!-- branch to list.html or single.html -->
+        {{ block "menu" . }}
+          {{ partial "menu/menu-sectiontree" . }}
+
+        {{ end }}
+      </nav>
+      {{if ne .Page.Type "nojsscroll"}}
+      <!-- pipes in /assets/js and bundles into $jsMenu-->
+      {{ $jsScroll := resources.Get "js/menu.js" }}
+      {{ $jsCollapse := resources.Get "js/collapse.js" | resources.ExecuteAsTemplate (print now.Unix "js/collapse.js") . }}
+      {{ $jsCustom := resources.Get "js/custom.js" }}
+      {{ $jsMenu := slice $jsScroll $jsCollapse $jsCustom | resources.Concat "js/menuBundle.js"}}
+      
+      <script src = "{{ $jsMenu.Permalink }}"> </script>
+      {{ end }}
+
+      {{if eq .Page.Type "nojsscroll"}}
+      <!-- pipes in /assets/js and bundles into $jsMenu, except for menu.js for scroll performance-->
+      {{ $jsnoScroll := resources.Get "js/menunoscroll.js" }}
+      {{ $jsCollapse := resources.Get "js/collapse.js" | resources.ExecuteAsTemplate (print now.Unix "js/collapse.js") . }}
+      {{ $jsCustom := resources.Get "js/custom.js" }}
+      {{ $jsMenuNoScroll := slice $jsnoScroll $jsCollapse $jsCustom | resources.Concat "js/menuBundleNoScroll.js"}}
+      
+      <script src = "{{ $jsMenuNoScroll.Permalink }}"> </script>
+      {{ end }}
+    </aside>
+{{ end }}
+
+<div class="book-page">
+  {{ block "main" . }}
+  {{ end }}
+</div>
+
+{{ block "toc" .}}
+{{ end }}
+
+</main>
+</div>
+
+
+  {{ partialCached "footer" . }}
+
+
+</body>
+</html>
